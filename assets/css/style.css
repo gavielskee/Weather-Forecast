@@ -5,10 +5,16 @@
     text-align: center;
 }
 
-.form-control {
+
+#search-section {
     width: 25%;
 };
 
-body {
+main {
+    display: flex !important;
+}
+
+#forecast {
     display: flex;
+    justify-content: space-evenly;
 }
