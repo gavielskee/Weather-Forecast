@@ -4,3 +4,7 @@
     background-image: linear-gradient(to right, rgba(58, 58, 238, 0.548), rgb(42, 42, 155));
     text-align: center;
 }
+
+.form-control {
+    width: 25%;
+};
