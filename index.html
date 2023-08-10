@@ -6,39 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <header>
     <h1 id="dashboard">Weather Dashboard</h1>
 </header>
 
 <body>
-    <div id="search-section">
-        <h2>Search for a City:</h2>
-        <input class="form-control input" list="cityList" id="exampleDataList" placeholder="Type to search...">
-        <datalist id="cityList">
-            <option value="San Francisco">
-            <option value="New York">
-            <option value="Seattle">
-            <option value="Los Angeles">
-            <option value="Chicago">
-        </datalist>
-        <br>
-        <a class="btn btn-primary" role="search">Search</a>
-    </div>
     <main>
-        <div id="current">
-            <h2 class="cityInfo"></h2>
-            <img class="icon"/>
-            <p class="temp"></p>
-            <p class="wind"></p>
-            <p class="humidity"></p>
+        <div id="search-section">
+            <h2>Search for a City:</h2>
+            <input class="form-control input" list="cityList" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="cityList">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+            <br>
+            <a class="btn btn-primary" role="search">Search</a>
         </div>
-        <div id="forecast">
+
+        <section>
+            <div id="current">
+                <h2 class="cityInfo"></h2>
+                <img class="icon" />
+                <p class="temp"></p>
+                <p class="wind"></p>
+                <p class="humidity"></p>
+            </div>
             <h2>5-Day Forecast:</h2>
-        </div>
+            <div id="forecast">
+                <div class="forecastCard"></div>
+                <div class="forecastCard"></div>
+                <div class="forecastCard"></div>
+                <div class="forecastCard"></div>
+                <div class="forecastCard"></div>
+            </div>
+        </section>
     </main>
-    <script src="assets/javascript/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>
