@@ -8,3 +8,7 @@
 .form-control {
     width: 25%;
 };
+
+body {
+    display: flex;
+}

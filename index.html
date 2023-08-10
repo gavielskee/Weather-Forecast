@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,34 @@
 <header>
     <h1 id="dashboard">Weather Dashboard</h1>
 </header>
-<body>
-<div id="search-section">
-    <h2>Search for a City:</h2>
-    <input class="form-control input" list="cityList" id="exampleDataList" placeholder="Type to search...">
-    <datalist id="cityList">
-      <option value="San Francisco">
-      <option value="New York">
-      <option value="Seattle">
-      <option value="Los Angeles">
-      <option value="Chicago">
-    </datalist>
-    <br>
-    <a class="btn btn-primary" role="search">Search</a>
-</div>
-<div id="Forecast">
-    <h2>5-Day Forecast:</h2>
-</div>
-<script src="assets/javascript/script.js"></script>
-</body>
-<footer>
 
-</footer>
+<body>
+    <div id="search-section">
+        <h2>Search for a City:</h2>
+        <input class="form-control input" list="cityList" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="cityList">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+        </datalist>
+        <br>
+        <a class="btn btn-primary" role="search">Search</a>
+    </div>
+    <main>
+        <div id="current">
+            <h2 class="cityInfo"></h2>
+            <img class="icon"/>
+            <p class="temp"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+        </div>
+        <div id="forecast">
+            <h2>5-Day Forecast:</h2>
+        </div>
+    </main>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
 </html>
